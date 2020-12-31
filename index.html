@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" CONTENT="Monthakan Kaewto">
+
+    <title>คำร้องขอลาพักการศึกษา(กรณีพิเศษ)</title>
+    <link rel="shortcut icon" href="img/มหาวิทยาลัยแม่โจ้_edit.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<style>
+    table {
+        width: 100%;
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="col-sm-1"></div>
+        <h1 align='center'><img src="img/มหาวิทยาลัยแม่โจ้_edit.png" alt="" width="125"> </h1>
+        <h2 align='center'>คำร้องขอลาพักการศึกษา</h2>
+        <h4 align='center'>(สำหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</h4>
+
+        <div class="row">
+            <div class="col">
+                <p align='right'>เขียนที่ มหาวิทยาลัยแม่โจ้</p>
+                <p align='right'> วันเดือนปี
+                    <input type="date"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <strong>เรื่อง</strong> ขอลาพักการศึกษา ในภาคเรียนที่
+                <select>
+                    <option value="" disabled selected> </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                 </select> ปีการศึกษา <input type="text" required>
+            </div>
+            <script>
+                /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+            <div>
+                <strong>เรียน </strong> อธิการบดี ผ่าน คณบดีคณะ
+                <select>
+                    <option value="" disabled selected>คณะ....</option>
+                    <option value="1">คณะผลิตกรรมการเกษตร</option>
+                    <option value="2">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                    <option value="3">คณะวิทยาศาสตร์</option>
+                    <option value="4">คณะบริหารธุรกิจ</option>
+                    <option value="5">คณะพัฒนาการท่องเที่ยว</option>
+                    <option value="6">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                    <option value="7">คณะเศรษฐศาสตร์</option>
+                    <option value="8">คณะศิลปศาสตร์</option>
+                    <option value="9">คณะสารสนเทศและการสื่อสาร</option>
+                    <option value="10">คณะสถาปัตยกรรมศาสตร์และการออกแบบ</option>
+                    <option value="11">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                    <option value="11">วิทยาลัยบริหารศาสตร์</option>
+                    <option value="11">วิทยาลัยพลังงานทดแทน</option>
+                    <option value="11">วิทยาลัยนานาชาติ</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form action="#">
+                        ข้าพเจ้า
+                        <label>
+                            <input type="checkbox" />
+                            <span>นาย</span>
+                          </label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>นาง</span>
+                          </label>
+                        <label>
+                            <input type="checkbox" />
+                            <span>นางสาว</span>
+                          </label>
+                        <label for="first_name">ชื่อ</label>
+                        <input placeholder="" id="first_name" type="text" class="validate" required>
+
+                        <label for="last_name">นามสกุล</label>
+                        <input id="last_name" type="text" class="validate" required>
+                        <br>
+
+                        <div>
+                            รหัสนักศึกษา
+                            <input type="text" name="" value="" required> โทรศัพท์มือถือ
+                            <input type="tel" name="" id="" required> โปรดระบุ
+                        </div>
+                        <div>
+                            หลักสูตร ปริญญาตรี
+                            <input type="checkbox" name="" id="">4-5ปี
+                            <input type="checkbox" name="" id="">4 ปี เทียบเข้าเรียน(2ปี)
+                            <input type="checkbox" name="" id="">ภาคปกติ
+                            <input type="checkbox" name="" id="">ภาคสมทบ
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    คณะ
+                    <select>
+                        <option value="" disabled selected>คณะ....</option>
+                        <option value="1">คณะผลิตกรรมการเกษตร</option>
+                        <option value="2">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                        <option value="3">คณะวิทยาศาสตร์</option>
+                        <option value="4">คณะบริหารธุรกิจ</option>
+                        <option value="5">คณะพัฒนาการท่องเที่ยว</option>
+                        <option value="6">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                        <option value="7">คณะเศรษฐศาสตร์</option>
+                        <option value="8">คณะศิลปศาสตร์</option>
+                        <option value="9">คณะสารสนเทศและการสื่อสาร</option>
+                        <option value="10">คณะสถาปัตยกรรมศาสตร์และการออกแบบ</option>
+                        <option value="11">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                        <option value="11">วิทยาลัยบริหารศาสตร์</option>
+                        <option value="11">วิทยาลัยพลังงานทดแทน</option>
+                        <option value="11">วิทยาลัยนานาชาติ</option>
+                    </select>
+                    <label for="last_name">สาขา</label>
+                    <input id="last_name" type="text" class="validate" required>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>มีความประสงค์จะขอลาพักการศึกษา(กรณีพิเศษ) เนื่องจาก..
+                            <input type="url">
+                        </p>
+                    </div>
+                    <div>
+                        <p> พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง / ใบรับรองแพทย2 / เอกสารอื่นๆ </p>
+                    </div>
+                    <div>
+                        <p> จึงเรียนมาเพื่อโปรดพิจารณา</p>
+                    </div>
+                    <div>
+                        <p align='right'>ขอแสดงความนับถือ </p>
+                    </div>
+                    <div>
+                        <p align='right'>
+                            <input type="file">
+                        </p>
+                        <p align='right'>นักศึกษา</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>ความเห็นหัวหน้ากลุ้มภารกิจทะเบียนเรียน ประมวลผลฯ </p>
+                                    <div>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้</span>
+                                            </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ภาคเรียนที่ 1</span>
+                                            </label>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ภาคเรียนที่ 2</span>
+                                            </label>
+                                    </div>
+                                    <p align='center'>
+                                        <input type="file">
+                                    </p>
+                                    <p align='center'>หัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</p>
+                                    <p align='center'> วันเดือนปี
+                                        <input type="date"></p>
+                                </td>
+                                <td>
+                                    <p>ความเห็นผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ </p>
+                                    <div>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ทราบ </span>
+                                            </label>
+                                    </div>
+                                    <p align='center'>
+                                        <input type="file">
+                                    </p>
+                                    <p align='center'>ผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ</p>
+                                    <p align='center'> วันเดือนปี
+                                        <input type="date"></p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ความเห็นอาจารย์ที่ปรึกษา </p>
+                                    <div>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ทราบ </span>
+                                            </label>
+                                    </div>
+                                    <p align='center'>
+                                        <input type="file">
+                                    </p>
+                                    <p align='center'> วันเดือนปี
+                                        <input type="date"></p>
+                                </td>
+                                <td>
+                                    <p>ความเห็นประะธานคณะกรรมการประจำหลักสูตร</p>
+                                    <div>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ทราบ </span>
+                                            </label>
+                                    </div>
+                                    <p align='center'>
+                                        <input type="file">
+                                    </p>
+                                    <p align='center'> วันเดือนปี
+                                        <input type="date"></p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ความเห็นคณบดี </p>
+                                    <div>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>อนุมัติ </span>
+                                            </label>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ไม่อนุมัติ </span>
+                                            </label>
+                                    </div>
+                                    <p align='center'>
+                                        <input type="file">
+                                    </p>
+                                    <p align='center'> วันเดือนปี
+                                        <input type="date"></p>
+                                </td>
+                                <td>
+                                    <p>งานเงินรายได้ กองคลัง ชั้นที่ 2 อาคารอิงศรีกสิการ </p>
+                                    <p>ได้ชำระเงินจำนวน</p>
+                                    <div>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ภาคเรียนที่ 1 1,200 </span>
+                                            </label>
+                                        <label>
+                                                <input type="checkbox" />
+                                                <span>ภาคเรียนที่ 2 1,000 </span>
+                                            </label>
+                                    </div>
+                                    <p align='center'>
+                                        <input type="file">
+                                    </p>
+                                    <p align='center'>ผู้รับเงิน</p>
+                                    <p align='center'> วันเดือนปี
+                                        <input type="date"></p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ส่งเอกสารคำร้องขอลาพักการศึกษาตัวจริง </p>
+                                    <p>ให้กลุ่มภารกิจทะเบียนฯ ชั้นที่ 2 อาคารอำนวย ยศสุข </p>
+                                    <p>เพื่อบันทึกคำร้องขอลาพักการศึกษาและให้นักศึกษาเก็บหลักฐาน </p>
+                                    <p>ใบเสร็จที่ชำระเงินไว้เพื่อตรวจสอบการบันทึกการลาพักการศึกษา
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>สำหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล ได้บันทึกการข้อมูล </p>
+                                    ดังกล่าว ในวันที่
+                                    <input type="date"></p>
+
+                                    <p align='center'>
+                                        <input type="file">
+                                    </p>
+
+                                    <p align='center'> วันเดือนปี
+                                        <input type="date"></p>
+                                </td>
+
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col-sm-1"></div>
+            <br>
+            <h2 align='center'>คำรับรองของผู้ปกครอง</h2>
+
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <p align='right'> บ้านเลขที่<input type="url" SIZE="3"> หมู่ <input type="url" SIZE="3"> ตำบล <input type="url" SIZE="5"></p>
+                    <p align='right'> อำเภอ<input type="url" SIZE="11"> จังหวัด<input type="url" SIZE="12"> </p>
+                    <p align='right'> รหัสไปรษณี<input type="url" SIZE="10"> โทรศัพท์<input type="url" SIZE="6"> </p>
+                    <p align='right'> วันเดือนปี
+                        <input type="date"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <strong>เรื่อง</strong> ยินยอมให้นักศึกษาลาพักการศึกษา ในภาคเรียนที่
+                    <select>
+                        <option value="" disabled selected> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                     </select> ปีการศึกษา <input type="text" required>
+                </div>
+                <script>
+                    /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+                <div>
+                    <strong>เรียน </strong> อธิการบดี ผ่าน คณบดีคณะ
+                    <select>
+                        <option value="" disabled selected>คณะ....</option>
+                        <option value="1">คณะผลิตกรรมการเกษตร</option>
+                        <option value="2">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                        <option value="3">คณะวิทยาศาสตร์</option>
+                        <option value="4">คณะบริหารธุรกิจ</option>
+                        <option value="5">คณะพัฒนาการท่องเที่ยว</option>
+                        <option value="6">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                        <option value="7">คณะเศรษฐศาสตร์</option>
+                        <option value="8">คณะศิลปศาสตร์</option>
+                        <option value="9">คณะสารสนเทศและการสื่อสาร</option>
+                        <option value="10">คณะสถาปัตยกรรมศาสตร์และการออกแบบ</option>
+                        <option value="11">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                        <option value="11">วิทยาลัยบริหารศาสตร์</option>
+                        <option value="11">วิทยาลัยพลังงานทดแทน</option>
+                        <option value="11">วิทยาลัยนานาชาติ</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form action="#">
+                            ตามที่
+                            <label>
+                                <input type="checkbox" />
+                                <span>นาย</span>
+                              </label>
+                            <label>
+                                <input type="checkbox" />
+                                <span>นาง</span>
+                              </label>
+                            <label>
+                                <input type="checkbox" />
+                                <span>นางสาว</span>
+                              </label>
+                            <label for="first_name">ชื่อ</label>
+                            <input placeholder="" id="first_name" type="text" class="validate" required>
+
+                            <label for="last_name">นามสกุล</label>
+                            <input id="last_name" type="text" class="validate" required>
+                            <br>
+
+                            <div>
+                                รหัสนักศึกษา
+                                <input type="text" name="" value="" required> โทรศัพท์มือถือ
+                                <input type="tel" name="" id="" required> โปรดระบุ
+                            </div>
+                            <div>
+                                หลักสูตร ปริญญาตรี
+                                <input type="checkbox" name="" id="">4-5ปี
+                                <input type="checkbox" name="" id="">4 ปี เทียบเข้าเรียน(2ปี)
+                                <input type="checkbox" name="" id="">ภาคปกติ
+                                <input type="checkbox" name="" id="">ภาคสมทบ
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        คณะ
+                        <select>
+                            <option value="" disabled selected>คณะ....</option>
+                            <option value="1">คณะผลิตกรรมการเกษตร</option>
+                            <option value="2">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                            <option value="3">คณะวิทยาศาสตร์</option>
+                            <option value="4">คณะบริหารธุรกิจ</option>
+                            <option value="5">คณะพัฒนาการท่องเที่ยว</option>
+                            <option value="6">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                            <option value="7">คณะเศรษฐศาสตร์</option>
+                            <option value="8">คณะศิลปศาสตร์</option>
+                            <option value="9">คณะสารสนเทศและการสื่อสาร</option>
+                            <option value="10">คณะสถาปัตยกรรมศาสตร์และการออกแบบ</option>
+                            <option value="11">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                            <option value="11">วิทยาลัยบริหารศาสตร์</option>
+                            <option value="11">วิทยาลัยพลังงานทดแทน</option>
+                            <option value="11">วิทยาลัยนานาชาติ</option>
+                        </select>
+                        <label for="last_name">สาขา</label>
+                        <input id="last_name" type="text" class="validate" required>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา ในภาคเรียนที่
+                                <select>
+                            <option value="" disabled selected> </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                         </select> ปีการศึกษา <input type="text" required>
+                            </p>
+                            <p>เนื่องจาก..
+                                <input type="url">
+                            </p>
+                            ข้าพเจ้า
+                            <label>
+                                <input type="checkbox" />
+                                <span>นาย</span>
+                              </label>
+                            <label>
+                                <input type="checkbox" />
+                                <span>นาง</span>
+                              </label>
+                            <label>
+                                <input type="checkbox" />
+                                <span>นางสาว</span>
+                              </label>
+                            <label for="first_name">ชื่อ</label>
+                            <input placeholder="" id="first_name" type="text" class="validate" required>
+
+                            <label for="last_name">นามสกุล</label>
+                            <input id="last_name" type="text" class="validate" required>
+                            <br>
+
+                        </div>
+                        <div>
+                            <p> ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการศึกษาแล้ว และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา </p>
+                        </div>
+                        <div>
+                            <p> จึงเรียนมาเพื่อโปรดพิจารณา</p>
+                        </div>
+                        <div>
+                            <p align='center'>ขอแสดงความนับถือ </p>
+                        </div>
+                        <div>
+                            <p align='center'>
+                                <input type="file">
+                            </p>
+                            <p align='center'>ผู้ปกครองของนักศึกษา</p>
+                            <p align='center'>นักศึกษา</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>ขั้นตอนการเสนอคำร้องลาพักการศึกษา</h4>
+                    <p>1.นักศึกษากรอกคำร้องขอลาพักการศึกษา</p>
+                    <p>2.เสนอคำร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</p>
+                    <p>3.เสนอคำร้องต่อผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอำนวย ยศสุข)</p>
+                    <p>4.เสนอคำร้องต่ออาจารย์ที่ปรึกษา (คณะที่นักศึกษาสังกัด)</p>
+                    <p>5.เสนอคำร้องต่อประธานคณะกรรมการประจำหลักสูตร (คณะที่นักศึกษาสังกัด)</p>
+                    <p>6.เสนอคำร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)</p>
+                    <p>7.นำคำร้องไปชำระเงิน (กองคลัง ชั้นที่ 2 อาคารอิงศรีกสิการ)</p>
+                    <p>8.นำคำร้องขอลาพักการศึกษา ที่ชำระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป</p>
+                    <p>9.เจ้าหน้าที่ทะเบียนฯ บันนทึกฐานข้อมูล นักศึกษาสามรถตรวจสอบได้ในวันต่อไป</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
